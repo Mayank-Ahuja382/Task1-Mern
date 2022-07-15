@@ -1,0 +1,90 @@
+<html >
+    <head>
+        <script>
+        function lw()
+        {
+            var x=document.getElementById("d12");
+            var y=document.getElementById("d2").value;
+            x.innerHTML=y;
+        }
+        function may()
+        {
+            location.reload();
+            y =document.getElementById("reload");
+            y.style.background="yellow";
+        }
+    </script>
+    <style>
+        .background {
+            background-image: url("https://msatechnosoft.in/blog/wp-content/uploads/2017/04/Web-Design-using-HTML-msa-technosoft.png");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .container {
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+        #d8{
+            font-size: xx-large;
+            text-align: center;
+            text-decoration: underline;
+            padding: 10px;
+            padding-top: 0;
+            position: absolute;
+            left: 0;
+        }
+        #d2{
+            width: 50%;
+            height: 80%;
+            position: absolute;
+            left: 0;
+            top: 20%;
+            background-color: #4eafb8;
+            border: 2px solid black;
+        }
+        #reload {
+            background: red;
+            width: 10%;
+            height: 5%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #reload:hover{
+            transform: scale(1.2);
+            background-color: blue;
+        }
+        #d12 {
+            width: 49%;
+            height: 80%;
+            padding: 10px;
+            background-color: aquamarine;
+            position: absolute;
+            right: 0;
+            top:20%;
+            border: 2px solid black;
+        }
+        .thanks {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: x-large;
+            font-weight: lighter;
+            text-decoration: underline;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body class="background">
+        <section>
+            <div class="container">
+        <p>HTML TRANSLATOR</p>
+        <input id="reload" type="Reset" onclick="may()"></input>
+    </div>
+        <div id="d12"> Output is Reflect Here.</br>
+        </div>
+        <div>
+        <div id="d1"><strong id="d8">Enter your code:</strong></br><textarea id="d2" onkeyup="lw()"></textarea>
+        </div>
+</div>
+    </section>
+    </body>
+</html>
